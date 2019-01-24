@@ -21,8 +21,10 @@ const CardList = ({cards, onCardClick}) => {
           <div 
             className="card ui inverted green segment"
             key={card.key}
+            
             onClick={() => onCardClick(card.key, card.status)}
           >
+            <h1 className="card-title">{cards.indexOf(card) + 1}</h1>
           </div>
         )
       })

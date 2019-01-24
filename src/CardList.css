@@ -1,5 +1,8 @@
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 250px;
   height: 350px;
   margin: auto !important;
@@ -7,7 +10,11 @@
   overflow: auto;
 }
 
+.card-title {
+  font-size: 4em;
+}
+
 card-list {
   display: grid;
-  grid-template-colums: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
