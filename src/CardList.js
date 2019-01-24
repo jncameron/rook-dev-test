@@ -5,7 +5,7 @@ import './CardList.css';
 const CardList = ({cards, onCardClick}) => {
 
   return(
-    <div>
+    <div className="note-list ui equal width divided grid" >
       {cards.map(card => {
         
         return(
