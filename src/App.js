@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Segment} from 'semantic-ui-react';
+import { Segment, Button} from 'semantic-ui-react';
 import CardList from './CardList';
+import Header from './Header';
 import './App.css';
 
 class App extends Component {
@@ -63,16 +64,24 @@ class App extends Component {
     this.setState({cards: newState})
   }
 
+  kittenize = () => {
+
+  }
+
+  addCard = () => {
+
+  }
+
   render() {
     return (
       <div className="App">
+        <Header kittenize={this.kittenize} addCard={this.addCard}/>
         <Segment >
-          <h1>Developer Test</h1>
-        </Segment>
-        <Segment >
-          <h3>Cards</h3>
-          <CardList cards={this.state.cards} onCardClick={this.onCardClick}/>
-
+          <h3>Cards</h3>       
+          <CardList 
+            cards={this.state.cards} 
+            onCardClick={this.onCardClick}
+          />
         </Segment>
       </div>
     );
