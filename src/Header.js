@@ -1,6 +1,7 @@
 import React from 'react';
 import { Segment, Button} from 'semantic-ui-react';
 
+
 const Header = ({kittenize, addCard}) => (
   <Segment>
     <h1>Developer Test</h1>
