@@ -1,12 +1,35 @@
 import React from 'react';
 import './CardList.css';
 
-const CardList = () => {
+const CardList = ({cards, onCardClick}) => {
+
   return(
-    <div className="card ui inverted blue segment">
-      Stuff goes here
-    </div>
-  )
-}
+    <div>
+      {cards.map(card => {
+        
+        return(
+          card.status === 'inactive'
+          ?
+          <div 
+            className="card ui inverted red segment"
+            key={card.key}
+            onClick={() => onCardClick(card.key)}
+          >
+          hi
+          </div>
+          :
+          <div 
+            className="card ui inverted green segment"
+            key={card.key}
+            onClick={() => onCardClick(card.key)}
+          >
+          hi
+          </div>
+        )
+      })
+    }
+
+  </div>
+  )}
 
 export default CardList;
