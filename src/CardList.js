@@ -19,7 +19,7 @@ const CardList = ({cards, onCardClick, kittens}) => {
           >
           {kittens === true
             ?
-            <img className="card-kitten" src="http://placekitten.com/252/350" alt='kitten'/>
+            <img className="card-kitten" src={`http://placekitten.com/${150+cards.indexOf(card)}/250`} alt='kitten'/>
             :
             <div></div>}
           </div>
@@ -33,7 +33,7 @@ const CardList = ({cards, onCardClick, kittens}) => {
             <h1 className="card-title">{cards.indexOf(card) + 1}</h1>
             {kittens === true
             ?
-            <img className="card-kitten" src="http://placekitten.com/252/350" alt='kitten'/>
+            <img className="card-kitten" src={`http://placekitten.com/${150+cards.indexOf(card)}/250`} alt='kitten'/>
             :
             <div></div>}
           </div>
