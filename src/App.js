@@ -35,16 +35,28 @@ class App extends Component {
     ]
   }
 
-  onCardClick = (key) => {
+  onCardClick = (key, status) => {
     console.log(this.state.cards[0]['key'])
     console.log(key)
 
     let newState = this.state.cards;
-    console.log(newState)
+    let activeCount = 0;
+
+    for (let i=0; i < newState.length; i++) {
+      if(newState[i]['status'] === 'active') {
+        activeCount++
+      }
+      console.log(activeCount);
+    }
+
     for (let i=0; i < newState.length; i++) {
       if (newState[i]['key'] === key) {
 
-        newState[i]['status'] = 'active'
+        if (newState[i]['status'] === 'inactive' && activeCount < 1) {
+          newState[i]['status'] = 'active'
+        } else if (newState[i]['status'] === 'active') {
+          newState[i]['status'] = 'inactive'
+        }
 
       }
     }

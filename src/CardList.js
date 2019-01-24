@@ -13,7 +13,7 @@ const CardList = ({cards, onCardClick}) => {
           <div 
             className="card ui inverted red segment"
             key={card.key}
-            onClick={() => onCardClick(card.key)}
+            onClick={() => onCardClick(card.key, card.status)}
           >
           hi
           </div>
@@ -21,7 +21,7 @@ const CardList = ({cards, onCardClick}) => {
           <div 
             className="card ui inverted green segment"
             key={card.key}
-            onClick={() => onCardClick(card.key)}
+            onClick={() => onCardClick(card.key, card.status)}
           >
           hi
           </div>
