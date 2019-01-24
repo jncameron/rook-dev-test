@@ -12,6 +12,14 @@
 
 .card-title {
   font-size: 4em;
+  margin-bottom: 0px;
+}
+
+.card-kitten {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  border: 2px black solid;
 }
 
 card-list {

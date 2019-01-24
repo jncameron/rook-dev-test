@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rook-dev-test/precache-manifest.1a5acece091c2ea2525529f7daa365c8.js"
+  "/rook-dev-test/precache-manifest.51ff74a2a3f0e6f18f363b7847dc61a8.js"
 );
 
 workbox.clientsClaim();

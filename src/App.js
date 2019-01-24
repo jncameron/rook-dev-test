@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment, Button} from 'semantic-ui-react';
+import { Segment} from 'semantic-ui-react';
 import CardList from './CardList';
 import Header from './Header';
 import './App.css';
@@ -33,13 +33,11 @@ class App extends Component {
           status: 'inactive',
           key: 'card6'
         }
-    ]
+    ],
+    kittens: false
   }
 
   onCardClick = (key) => {
-    console.log(this.state.cards[0]['key'])
-    console.log(key)
-
     let newState = this.state.cards;
     let activeCount = 0;
 
@@ -47,7 +45,6 @@ class App extends Component {
       if(newState[i]['status'] === 'active') {
         activeCount++
       }
-      console.log(activeCount);
     }
 
     for (let i=0; i < newState.length; i++) {
@@ -58,14 +55,17 @@ class App extends Component {
         } else if (newState[i]['status'] === 'active') {
           newState[i]['status'] = 'inactive'
         }
-
       }
     }
     this.setState({cards: newState})
   }
 
   kittenize = () => {
-    //TODO!
+    if(!this.state.kittens) {
+      this.setState({kittens: true})
+    } else {
+      this.setState({kittens: false})
+    }
   }
 
   addCard = () => {
@@ -85,10 +85,11 @@ class App extends Component {
       <div className="App">
         <Header kittenize={this.kittenize} addCard={this.addCard}/>
         <Segment >
-          <h3>Cards</h3>       
+          <h3 className="card-list-segment-title">Cards</h3>       
           <CardList 
             cards={this.state.cards} 
             onCardClick={this.onCardClick}
+            kittens={this.state.kittens}
           />
         </Segment>
       </div>
