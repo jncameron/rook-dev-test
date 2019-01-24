@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Segment} from 'semantic-ui-react';
+import CardList from './CardList';
 import './App.css';
 
 class App extends Component {
+
+    state = {
+      cards: []
+    }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Segment >
+          <h1>Developer Test</h1>
+        </Segment>
+        <Segment >
+          <h3>Cards</h3>
+          <CardList />
+
+        </Segment>
       </div>
     );
   }
