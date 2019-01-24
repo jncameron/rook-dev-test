@@ -16,7 +16,6 @@ const CardList = ({cards, onCardClick}) => {
             key={card.key}
             onClick={() => onCardClick(card.key, card.status)}
           >
-          hi
           </div>
           :
           <div 
@@ -24,7 +23,6 @@ const CardList = ({cards, onCardClick}) => {
             key={card.key}
             onClick={() => onCardClick(card.key, card.status)}
           >
-          hi
           </div>
         )
       })

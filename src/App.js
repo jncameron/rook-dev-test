@@ -36,7 +36,7 @@ class App extends Component {
     ]
   }
 
-  onCardClick = (key, status) => {
+  onCardClick = (key) => {
     console.log(this.state.cards[0]['key'])
     console.log(key)
 
@@ -65,11 +65,19 @@ class App extends Component {
   }
 
   kittenize = () => {
-
+    //TODO!
   }
 
   addCard = () => {
-
+    const newCard = {
+      status: 'inactive',
+      key: Date.now()
+    }
+    this.setState(prevState => {
+      return {
+        cards: prevState.cards.concat(newCard)
+      }
+    })
   }
 
   render() {
