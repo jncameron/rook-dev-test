@@ -52,6 +52,15 @@ class App extends Component {
 
         if (newState[i]['status'] === 'inactive' && activeCount < 1) {
           newState[i]['status'] = 'active'
+          
+        } else if (newState[i]['status'] === 'inactive' && activeCount === 1){
+          for (let j=0; j < newState.length; j++) {
+            if (newState[j]['key'] !== key) {
+              newState[j]['status'] = 'inactive'
+              newState[i]['status'] = 'active'
+            }
+          }
+
         } else if (newState[i]['status'] === 'active') {
           newState[i]['status'] = 'inactive'
         }
