@@ -1,7 +1,7 @@
 {
   "main.css": "/rook-dev-test/static/css/main.3b22cb32.chunk.css",
-  "main.js": "/rook-dev-test/static/js/main.cbee7156.chunk.js",
-  "main.js.map": "/rook-dev-test/static/js/main.cbee7156.chunk.js.map",
+  "main.js": "/rook-dev-test/static/js/main.8eda5217.chunk.js",
+  "main.js.map": "/rook-dev-test/static/js/main.8eda5217.chunk.js.map",
   "static/css/1.2b146c84.chunk.css": "/rook-dev-test/static/css/1.2b146c84.chunk.css",
   "static/js/1.2f6e42dc.chunk.js": "/rook-dev-test/static/js/1.2f6e42dc.chunk.js",
   "static/js/1.2f6e42dc.chunk.js.map": "/rook-dev-test/static/js/1.2f6e42dc.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/css/main.3b22cb32.chunk.css.map": "/rook-dev-test/static/css/main.3b22cb32.chunk.css.map",
   "static/css/1.2b146c84.chunk.css.map": "/rook-dev-test/static/css/1.2b146c84.chunk.css.map",
   "index.html": "/rook-dev-test/index.html",
-  "precache-manifest.e6647d33ee22ab9a979dfb7967910d04.js": "/rook-dev-test/precache-manifest.e6647d33ee22ab9a979dfb7967910d04.js",
+  "precache-manifest.c9b51165e817e127769e737f4c2c2ed0.js": "/rook-dev-test/precache-manifest.c9b51165e817e127769e737f4c2c2ed0.js",
   "service-worker.js": "/rook-dev-test/service-worker.js"
 }
